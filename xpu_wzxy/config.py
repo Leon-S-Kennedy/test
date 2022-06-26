@@ -1,5 +1,5 @@
 import random
-from xpu_wzxy.Utils import GetAddress
+from Utils import GetAddress
 
 sender = "*********"  # 推送信息：发件人的邮箱
 pass_ = "*********"  # 推送信息：发件人邮箱授权码
