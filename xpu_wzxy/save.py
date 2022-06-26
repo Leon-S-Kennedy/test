@@ -1,8 +1,8 @@
 import hashlib
 from urllib.parse import urlencode
 import json
-from xpu_wzxy.Utils import *
-from xpu_wzxy.config import *
+from Utils import *
+from config import *
 
 text = ""  # 初始化邮件内容
 title = ""  # 初始化邮件标题

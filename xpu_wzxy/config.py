@@ -1,24 +1,23 @@
 import random
-from xpu_wzxy.Utils import GetAddress
+from Utils import GetAddress
 
-sender = "937854328@qq.com"  # 推送信息：发件人的邮箱
-pass_ = "vzuwwhqfcilebbdd"  # 推送信息：发件人邮箱授权码
-user = "937854328@qq.com"  # 推送信息：收件人的邮箱
+sender = "*********"  # 推送信息：发件人的邮箱
+pass_ = "*********"  # 推送信息：发件人邮箱授权码
+user = "*********"  # 推送信息：收件人的邮箱
 
-username = "13227677101"  # 用户名（一般是手机号）
-password = "libowen"  # 密码（建议改为全小写字母，我在校园的登录很麻烦）
+username = "***********"  # 用户名（一般是手机号）
+password = "*********"  # 密码（建议改为全小写字母，我在校园的登录很麻烦）
 
 # 以下为需要抓包的信息
 # url：登录接口，这个是一样的
 # User_Agent：用户设备信息
 # Referer：页面来源（这个或许根据学校有不同？）
 url = "https://gw.wozaixiaoyuan.com/basicinfo/mobile/login/username"
-User_Agent = str(
-    "Mozilla/5.0 (Linux; Android 10; CDY-AN95 Build/HUAWEICDY-AN95; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/86.0.4240.99 XWEB/3234 MMWEBSDK/20211001 Mobile Safari/537.36 MMWEBID/3722 MicroMessenger/8.0.16.2040(0x2800105E) Process/appbrand1 WeChat/arm32 Weixin NetType/5G Language/zh_CN ABI/arm64 miniProgram/wxce6d08f781975d91")
+User_Agent = str("***")
 Referer = "https://servicewechat.com/wxce6d08f781975d91/186/page-frame.html"
 
-# 这个是登录凭证（每次登录会变，修改密码会变，过一段时间（36小时？）会变）
-jwsession="7be04ea072b249d4a175ab50479ce8a7"
+# 这个是登录凭证（每次登录会变，修改密码会变，过一段时间（半个月？）会变）
+jwsession="************************************"
 
 
 # 这个是健康打卡的信息
