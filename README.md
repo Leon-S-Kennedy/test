@@ -37,9 +37,12 @@ ___
 我们首先将修改好的脚本放入自己设定目录下。我们先看下crontab是否开启。输入`service crond status` 如果出现如下图的情况证明已经开启服务。
 ![图片](https://github.com/Leon-S-Kennedy/xpu_wzxy/blob/master/xpu_wzxy/img/img2.png "图片")  
 接下来我们来输入`crontab -e`来进行定时任务的配置。该命令以vim的方式打卡了一个文件，我们只需要按照指定的格式写配置文件即可。我们按下<kbd>i</kbd>进入编辑模式，在文件后面添加两条指令  
-* `30 12 * * * python3 /root/xpu_wzxy/save.py > /dev/null 2>&1 `  
-* `30 21 * * * python3 /root/xpu_wzxy/doSign.py > /dev/null 2>&1 `  
-这两条指令分别表示每天的12：30执行健康打卡脚本、每天的21：30执行晚签到脚本。编辑完成之后我们按<kbd>esc</kbd>退出编辑模式，然后按<kbd>:</kbd>输入`wq`保存配置文件即可。  
+* ~~`30 12 * * * python3 /root/xpu_wzxy/save.py > /dev/null 2>&1 `~~  
+* ~~`30 21 * * * python3 /root/xpu_wzxy/doSign.py > /dev/null 2>&1 `~~
+* 30 12 * * * cd /root/xpu_wzxy/ && python3 save.py > /dev/null 2>&1
+* 30 21 * * * cd /root/xpu_wzxy/ && python3 doSign.py > /dev/null 2>&1
+  
+这两条指令分别表示每天的12：30执行健康打卡脚本、每天的21：30执行晚签到脚本,其中的路径请更换为自己的脚本的父目录。编辑完成之后我们按<kbd>esc</kbd>退出编辑模式，然后按<kbd>:</kbd>输入`wq`保存配置文件即可。  
 ***到此,我们就可以愉快的完成本次任务了***
 ___
 ## 注意事项
